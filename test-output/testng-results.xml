@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-03T20:38:47 IST" name="Default suite" finished-at="2023-08-03T20:39:15 IST" duration-ms="27804">
+    <groups>
+    </groups>
+    <test started-at="2023-08-03T20:38:47 IST" name="Default test" finished-at="2023-08-03T20:39:15 IST" duration-ms="27804">
+      <class name="test.LoginTest">
+        <test-method is-config="true" signature="configureReports()[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:38:47 IST" name="configureReports" finished-at="2023-08-03T20:38:47 IST" duration-ms="260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configureReports -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:38:47 IST" name="openBrowser" finished-at="2023-08-03T20:38:52 IST" duration-ms="4274" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="createNewAccount()[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:38:52 IST" name="createNewAccount" finished-at="2023-08-03T20:39:01 IST" duration-ms="9418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createNewAccount -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:39:01 IST" name="closeBrowser" finished-at="2023-08-03T20:39:01 IST" duration-ms="143" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createNewAccount status=SUCCESS method=LoginTest.createNewAccount()[pri:0, instance:test.LoginTest@5e2c3d18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:39:01 IST" name="openBrowser" finished-at="2023-08-03T20:39:04 IST" duration-ms="2792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="loginWithValidCredentials()[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:39:04 IST" name="loginWithValidCredentials" finished-at="2023-08-03T20:39:08 IST" duration-ms="3662" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+expected [Home Page] but found [Facebook – log in or sign up],
+expected [null] but found [Facebook – log in or sign up]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+expected [Home Page] but found [Facebook – log in or sign up],
+expected [null] but found [Facebook – log in or sign up]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at test.LoginTest.loginWithValidCredentials(LoginTest.java:64)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidCredentials -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:39:08 IST" name="closeBrowser" finished-at="2023-08-03T20:39:08 IST" duration-ms="114" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithValidCredentials status=FAILURE method=LoginTest.loginWithValidCredentials()[pri:0, instance:test.LoginTest@5e2c3d18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:39:08 IST" name="openBrowser" finished-at="2023-08-03T20:39:11 IST" duration-ms="2693" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="loginWithValidUserNameAndInvalidPassword()[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:39:11 IST" name="loginWithValidUserNameAndInvalidPassword" finished-at="2023-08-03T20:39:11 IST" duration-ms="485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidUserNameAndInvalidPassword -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:39:11 IST" name="closeBrowser" finished-at="2023-08-03T20:39:11 IST" duration-ms="119" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginWithValidUserNameAndInvalidPassword status=SUCCESS method=LoginTest.loginWithValidUserNameAndInvalidPassword()[pri:0, instance:test.LoginTest@5e2c3d18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:39:11 IST" name="openBrowser" finished-at="2023-08-03T20:39:14 IST" duration-ms="2696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="loginwithInvalidUserNameAndPassword()[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:39:14 IST" name="loginwithInvalidUserNameAndPassword" finished-at="2023-08-03T20:39:14 IST" duration-ms="332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginwithInvalidUserNameAndPassword -->
+        <test-method is-config="true" signature="closeBrowser(org.testng.ITestResult)[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:39:14 IST" name="closeBrowser" finished-at="2023-08-03T20:39:15 IST" duration-ms="152" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginwithInvalidUserNameAndPassword status=SUCCESS method=LoginTest.loginwithInvalidUserNameAndPassword()[pri:0, instance:test.LoginTest@5e2c3d18] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="publish()[pri:0, instance:test.LoginTest@5e2c3d18]" started-at="2023-08-03T20:39:15 IST" name="publish" finished-at="2023-08-03T20:39:15 IST" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- publish -->
+      </class> <!-- test.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
